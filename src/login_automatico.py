@@ -13,3 +13,4 @@ navegador.find_element('xpath', '/html/body/main/section/div/div/form/section/\
                        div[4]/span/input').send_keys('Shoiti@2605')#senha
 navegador.find_element('xpath', '/html/body/main/section/div/div/form/section/\
                        div[5]/button[2]').click()
+print('hello world')
