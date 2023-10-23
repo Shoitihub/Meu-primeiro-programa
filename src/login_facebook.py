@@ -7,8 +7,9 @@ from selenium.webdriver.chrome.service import Service
 service = Service(ChromeDriverManager().install())
 navegador = webdriver.Chrome(service=service)
 navegador.get('https://www.facebook.com/')
-email = navegador.find_element(By.ID, 'email')
-senha = navegador.find_element(By.ID, 'pass')
+
+email = navegador.find_element(By.NAME, 'email')
+senha = navegador.find_element(By.NAME, 'pass')
 login = navegador.find_element(By.NAME, 'login')
 email.send_keys('shoiti.isotani@gmail.com')
 senha.send_keys('Shoiti2605')
