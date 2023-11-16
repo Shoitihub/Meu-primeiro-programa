@@ -104,6 +104,7 @@ def main():
             print(f'Não temos aniversariante no dia de hoje: {date.today()}')
             driver.close()
         driver.close()
+        print('FIM!')
     except Exception as e:
         print(e)
 
